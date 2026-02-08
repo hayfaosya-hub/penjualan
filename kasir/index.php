@@ -74,7 +74,7 @@ $riwayat = mysqli_query($koneksi, "
                                         <th>Tanggal</th>
                                         <th>Jumlah Item</th>
                                         <th>Total</th>
-                                        <th>Aksi</th>
+                                        <th style="width: 140px; text-align:center;">Aksi</th>
                                     </tr>
                                 </thead>
 
@@ -89,9 +89,14 @@ $riwayat = mysqli_query($koneksi, "
                                         <td><?= date('d-m-Y', strtotime($r['tgl_jual'])); ?></td>
                                         <td><?= $r['jumlah_item']; ?></td>
                                         <td>Rp <?= number_format($r['total_harga']); ?></td>
-                                        <td>
+                                        <td style="white-space: nowrap; text-align:center;">
                                             <a href="penjualan_detail.php?id=<?= $r['id_jual']; ?>"class="btn btn-sm btn-primary">
                                                 Detail
+                                            </a>
+                                            <a href="cetak.php?id_jual=<?php echo $r['id_jual']; ?>" 
+                                                target="_blank" 
+                                                class="btn btn-success btn-sm">
+                                                <i class="glyphicon glyphicon-print"></i> Cetak
                                             </a>
                                         </td>
                                     </tr>
