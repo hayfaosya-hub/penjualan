@@ -47,7 +47,7 @@
                         <a href="penjualan.php"><i class="glyphicon glyphicon-shopping-cart"></i> Penjualan</a>
                     </li>
                     <li class="<?= ($page == 'laporan.php') ? 'active' : '' ?>">
-                        <a href="laporan.php"><i class="glyphicon glyphicon-shopping-cart"></i> Laporan</a>
+                        <a href="laporan.php"><i class="glyphicon glyphicon-list-alt"></i> Laporan</a>
                     </li>
                     <li>
                         <a href="../logout.php"><i class="glyphicon glyphicon-log-out"></i> Log Out</a>
